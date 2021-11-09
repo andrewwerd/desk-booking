@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/theming";
+$custom-typography: mat-typography-config(
+  $font-family: 'SegoeRegular, "Helvetica Neue", sans-serif',
+);
+
+@include angular-material-typography($custom-typography);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: SegoeRegular, "Helvetica Neue", sans-serif;
+}
+.page-container {
+  margin: 20px;
+  padding: 20px;
+  height: 100%;
+  background-color: white;
+  border-radius: "12px";
+  box-shadow: "0px 0px 20px rgba(0, 0, 0, 0.05)";
+}
+.block-container {
+  margin: 10px;
+}
+.info-label {
+  font-size: 16px;
+}
+.alternative-label {
+  font-size: 14px;
+  color: darkgray;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.full-width {
+  width: 100%;
+}
+.grey-border {
+  border-color: #e4e4e4;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+}
+.dark-green-icon {
+  color: #6c8258;
+}
